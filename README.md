@@ -1,7 +1,3 @@
-# Movie-Recommendation-Netflix
-Movie Recommendation Netflix
-
-<img src='http://www.techscript24.com/admin/UI/assets/img/BlogsImage/netflix-q.jpg'>
 # NETFLIX-MOVIE-RECOMMENDATION-SYSTEM
 
 # 1. Business Problem 
