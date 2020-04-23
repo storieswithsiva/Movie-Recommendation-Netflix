@@ -1,6 +1,9 @@
 # NETFLIX-MOVIE-RECOMMENDATION-SYSTEM
-# Movie-Recommendation-Netflix
+
 [![Makes people smile](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/iamsivab)
+
+# Movie-Recommendation-Netflix
+
 [![Generic badge](https://img.shields.io/badge/Datascience-Beginners-Red.svg?style=for-the-badge)](https://github.com/iamsivab/Movie-Recommendation-Netflix) 
 [![Generic badge](https://img.shields.io/badge/LinkedIn-Connect-blue.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iamsivab/) [![Generic badge](https://img.shields.io/badge/Python-Language-blue.svg?style=for-the-badge)](https://github.com/iamsivab/Movie-Recommendation-Netflix) [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
 
@@ -12,7 +15,7 @@ Now there are a lot of interesting alternative approaches to how Cinematch works
 
 > Credits: https://www.netflixprize.com/rules.html
 
-#### The goal of this project is to [#DataScience](https://github.com/iamsivab/Movie-Recommendation-Netflix) from the various travel insurance-related attributes.
+#### The goal of this project is to develop a recomendation system [#DataScience](https://github.com/iamsivab/Movie-Recommendation-Netflix) for Netflix.
 
 [![GitHub repo size](https://img.shields.io/github/repo-size/iamsivab/Movie-Recommendation-Netflix.svg?logo=github&style=social)](https://github.com/iamsivab) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/iamsivab/Movie-Recommendation-Netflix.svg?logo=git&style=social)](https://github.com/iamsivab/)[![GitHub top language](https://img.shields.io/github/languages/top/iamsivab/Movie-Recommendation-Netflix.svg?logo=python&style=social)](https://github.com/iamsivab)
 
@@ -31,10 +34,10 @@ Netflix provided a lot of anonymous rating data, and a prediction accuracy bar t
 
 [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/iamsivab/Movie-Recommendation-Netflix) [![Made with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/iamsivab/) [![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://www.linkedin.com/in/iamsivab/)
 
-### 1. Some form of interpretability.
-### 2. Machine Learning Problem 
-### 2.1 Data 
-### 2.1.1 Data Overview 
+1. Some form of interpretability.
+2. Machine Learning Problem 
+3. Data 
+### Data Overview 
 > Get the data from : https://www.kaggle.com/netflix-inc/netflix-prize-data/data
 
 Data files :
@@ -53,6 +56,29 @@ MovieIDs range from 1 to 17770 sequentially.
 CustomerIDs range from 1 to 2649429, with gaps. There are 480189 users.
 Ratings are on a five star (integral) scale from 1 to 5.
 Dates have the format YYYY-MM-DD.
+
+``` Python
+# Movie by Movie Similarity Matrix
+start = datetime.now()
+if not os.path.isfile('m_m_sim_sparse.npz'):
+    print("It seems you don't have that file. Computing movie_movie similarity...")
+    start = datetime.now()
+    m_m_sim_sparse = cosine_similarity(X=train_sparse_matrix.T, dense_output=False)
+    print("Done..")
+    # store this sparse matrix in disk before using it. For future purposes.
+    print("Saving it to disk without the need of re-computing it again.. ")
+    sparse.save_npz("m_m_sim_sparse.npz", m_m_sim_sparse)
+    print("Done..")
+else:
+    print("It is there, We will get it.")
+    m_m_sim_sparse = sparse.load_npz("m_m_sim_sparse.npz")
+    print("Done ...")
+
+print("It's a ",m_m_sim_sparse.shape," dimensional matrix")
+
+print(datetime.now() - start)
+
+```
 
 ### Mapping the real world problem to a Machine Learning Problem 
 ### Type of Machine Learning Problem 
@@ -96,7 +122,21 @@ Dates have the format YYYY-MM-DD.
 
 ### How to run?
 
-[![Ipynb](https://img.shields.io/badge/Ipynb-Movie_recommendation.ipynb-lightgrey.svg?logo=R&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/tree/master/src)
+[![Ipynb](https://img.shields.io/badge/Ipynb-Movie_recommendation.ipynb-lightgrey.svg?logo=python&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/tree/master/src)
+
+``` svd               1.0726046873826458
+knn_bsl_u         1.0726493739667242
+knn_bsl_m          1.072758832653683
+svdpp             1.0728491944183447
+bsl_algo          1.0730330260516174
+xgb_knn_bsl_mu    1.0753229281412784
+xgb_all_models     1.075480663561971
+first_algo        1.0761851474385373
+xgb_bsl           1.0763419061709816
+xgb_final         1.0763580984894978
+xgb_knn_bsl       1.0763602465199797
+Name: rmse, dtype: object
+```
 
 
 ### Project Reports
@@ -153,6 +193,6 @@ MIT &copy; [Sivasubramanian](https://github.com/iamsivab/Movie-Recommendation-Ne
 
 
 [![GitHub license](https://img.shields.io/github/license/iamsivab/Movie-Recommendation-Netflix.svg?style=social&logo=github)](https://github.com/iamsivab/Movie-Recommendation-Netflix/blob/master/LICENSE) 
-[![GitHub forks](https://img.shields.io/github/forks/iamsivab/Movie-Recommendation-Netflix.svg?style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/network) [![GitHub stars](https://img.shields.io/github/stars/iamsivab/Movie-Recommendation-Netflix.svg?style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/stargazers) [![GitHub followers](https://img.shields.io/github/followers/iamsivab.svg?label=Follow&style=social)](https://github.com/iamsivab/)
+[![GitHub forks](https://img.shields.io/github/forks/iamsivab/Movie-Recommendation-Netflix.svg?style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/network) [![GitHub stars](https://img.shields.io/github/stars/iamsivab/Movie-Recommendation-Netflix.svg?style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/stargazers) [![GitHub followers](https://img.shields.io/github/followers/iamsivab.svg?label=Follow&style=social)](https://github.com/iamsivab/)  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/iamsivab/ama)
 
 
