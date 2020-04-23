@@ -20,8 +20,8 @@ Now there are a lot of interesting alternative approaches to how Cinematch works
 [![GitHub repo size](https://img.shields.io/github/repo-size/iamsivab/Movie-Recommendation-Netflix.svg?logo=github&style=social)](https://github.com/iamsivab) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/iamsivab/Movie-Recommendation-Netflix.svg?logo=git&style=social)](https://github.com/iamsivab/)[![GitHub top language](https://img.shields.io/github/languages/top/iamsivab/Movie-Recommendation-Netflix.svg?logo=python&style=social)](https://github.com/iamsivab)
 
 #### Few popular hashtags - 
-### `#DataScience` `#Guide for Beginners` `#`
-### `#patternlearning` `#BagofWords` `#textanalytics`
+### `#DataScience` `#Netflix` `#Recommendation System`
+### `#Ratings` `#Movie PRediction` `#Numpy-Pandas`
 
 ### Motivation
 Netflix provided a lot of anonymous rating data, and a prediction accuracy bar that is 10% better than what Cinematch can do on the same training data set. (Accuracy is a measurement of how closely predicted ratings of movies match subsequent actual ratings.)
@@ -122,7 +122,7 @@ print(datetime.now() - start)
 
 ### How to run?
 
-[![Ipynb](https://img.shields.io/badge/Ipynb-Movie_recommendation.ipynb-lightgrey.svg?logo=python&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/tree/master/src)
+[![Ipynb](https://img.shields.io/badge/Ipynb-Movie_recommendation.ipynb-lightgrey.svg?logo=python&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/)
 
 ``` svd               1.0726046873826458
 knn_bsl_u         1.0726493739667242
