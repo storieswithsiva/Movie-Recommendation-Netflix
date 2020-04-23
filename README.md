@@ -4,8 +4,8 @@
 [![Generic badge](https://img.shields.io/badge/Datascience-Beginners-Red.svg?style=for-the-badge)](https://github.com/iamsivab/Movie-Recommendation-Netflix) 
 [![Generic badge](https://img.shields.io/badge/LinkedIn-Connect-blue.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iamsivab/) [![Generic badge](https://img.shields.io/badge/Python-Language-blue.svg?style=for-the-badge)](https://github.com/iamsivab/Movie-Recommendation-Netflix) [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
 
-# 1. Business Problem 
-### 1.1 Problem Description 
+### Business Problem 
+### Problem Description 
 Netflix is all about connecting people to the movies they love. To help customers find those movies, they developed world-class movie recommendation system: CinematchSM. Its job is to predict whether someone will enjoy a movie based on how much they liked or disliked other movies. Netflix use those predictions to make personal movie recommendations based on each customer’s unique tastes. And while Cinematch is doing pretty well, it can always be made better.
 
 Now there are a lot of interesting alternative approaches to how Cinematch works that netflix haven’t tried. Some are described in the literature, some aren’t. We’re curious whether any of these can beat Cinematch by making better predictions. Because, frankly, if there is a much better approach it could make a big difference to our customers and our business.
@@ -22,39 +22,18 @@ Now there are a lot of interesting alternative approaches to how Cinematch works
 
 ### Motivation
 Netflix provided a lot of anonymous rating data, and a prediction accuracy bar that is 10% better than what Cinematch can do on the same training data set. (Accuracy is a measurement of how closely predicted ratings of movies match subsequent actual ratings.)
+
 ### About the Project
 1. Predict the rating that a user would give to a movie that he ahs not yet rated.
 2. Minimize the difference between predicted and actual rating (RMSE and MAPE) 
-#### Results Gathered
 
-#### Steps involved in this project
+### Steps involved in this project
 
 [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/iamsivab/Movie-Recommendation-Netflix) [![Made with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/iamsivab/) [![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://www.linkedin.com/in/iamsivab/)
 
-#### Explanation
-
-### Libraries Used
-
-![R Studio](https://img.shields.io/badge/R-dplyr-blue.svg?style=flat&logo=r&logoColor=white) 
-![R Studio](https://img.shields.io/badge/R-stringr-blue.svg?style=flat&logo=r&logoColor=white)
-![R Studio](https://img.shields.io/badge/R-readtext-blue.svg?style=flat&logo=r&logoColor=white) 
-![R Studio](https://img.shields.io/badge/R-e1071-blue.svg?style=flat&logo=r&logoColor=white) 
-![R Studio](https://img.shields.io/badge/R-mlr-blue.svg?style=flat&logo=r&logoColor=white)
-![R Studio](https://img.shields.io/badge/R-caret-blue.svg?style=flat&logo=r&logoColor=white) 
-![R Studio](https://img.shields.io/badge/R-randomForest-blue.svg?style=flat&logo=r&logoColor=white) 
-
-
-### Installation
-
-- Install **randomForest** using pip command: `install.packages("randomForest")`
-- Install **caret** using pip command: `install.packages("caret")`
-- Install **mlr** using pip command: `install.packages("mlr")`
-- Install **MASS** using pip command: `install.packages("MASS")`
-
-### How to run?
-1. Some form of interpretability.
-# 2. Machine Learning Problem 
-## 2.1 Data 
+### 1. Some form of interpretability.
+### 2. Machine Learning Problem 
+### 2.1 Data 
 ### 2.1.1 Data Overview 
 > Get the data from : https://www.kaggle.com/netflix-inc/netflix-prize-data/data
 
@@ -75,32 +54,59 @@ CustomerIDs range from 1 to 2649429, with gaps. There are 480189 users.
 Ratings are on a five star (integral) scale from 1 to 5.
 Dates have the format YYYY-MM-DD.
 
-## 2.2 Mapping the real world problem to a Machine Learning Problem 
-### 2.2.1 Type of Machine Learning Problem 
+### Mapping the real world problem to a Machine Learning Problem 
+### Type of Machine Learning Problem 
 - For a given movie and user we need to predict the rating would be given by him/her to the movie. 
 - The given problem is a Recommendation problem 
 - It can also seen as a Regression problem 
-### 2.2.2 Performance metric 
+### Performance metric 
 - Mean Absolute Percentage Error: https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
 - Root Mean Square Error: https://en.wikipedia.org/wiki/Root-mean-square_deviation
-### 2.2.3 Machine Learning Objective and Constraints 
+### Machine Learning Objective and Constraints 
 - Minimize RMSE.
 - Try to provide some interpretability.
 
-[![R Studio](https://img.shields.io/badge/R-clean_data.R.-lightgrey.svg?logo=R&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/tree/master/src)
+
+### Libraries Used
+
+![Ipynb](https://img.shields.io/badge/Python-datetime-blue.svg?style=flat&logo=python&logoColor=white) 
+![Ipynb](https://img.shields.io/badge/Python-pandas-blue.svg?style=flat&logo=python&logoColor=white)
+![Ipynb](https://img.shields.io/badge/Python-numpy-blue.svg?style=flat&logo=python&logoColor=white) 
+![Ipynb](https://img.shields.io/badge/Python-matplotlib-blue.svg?style=flat&logo=python&logoColor=white) 
+![Ipynb](https://img.shields.io/badge/Python-seaborn-blue.svg?style=flat&logo=python&logoColor=white)
+![Ipynb](https://img.shields.io/badge/Python-scipy-blue.svg?style=flat&logo=python&logoColor=white) 
+![Ipynb](https://img.shields.io/badge/Python-sklearn-blue.svg?style=flat&logo=python&logoColor=white) 
+
+
+### Installation
+
+- Install **datetime** using pip command: `from datetime import datetime`
+- Install **pandas** using pip command: `import pandas as pd`
+- Install **numpy** using pip command: `import numpy as np`
+- Install **matplotlib** using pip command: `import matplotlib`
+- Install **matplotlib.pyplot** using pip command: `import matplotlib.pyplot as plt`
+- Install **seaborn** using pip command: `import seaborn as sns`
+- Install **os** using pip command: `import os`
+- Install **scipy** using pip command: `from scipy import sparse`
+- Install **scipy.sparse** using pip command: `from scipy.sparse import csr_matrix`
+- Install **sklearn.decomposition** using pip command: `from sklearn.decomposition import TruncatedSVD`
+- Install **sklearn.metrics.pairwise** using pip command: `from sklearn.metrics.pairwise import cosine_similarity`
+- Install **random** using pip command: `import random`
+
+
+### How to run?
+
+[![Ipynb](https://img.shields.io/badge/Ipynb-Movie_recommendation.ipynb-lightgrey.svg?logo=R&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/tree/master/src)
 
 
 ### Project Reports
 
-[![report](https://img.shields.io/static/v1.svg?label=Project&message=Report&logo=microsoft-word&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/blob/master/Sivasubramanian-Text%20Mining%20Report.pdf)
+[![report](https://img.shields.io/static/v1.svg?label=Project&message=Report&logo=microsoft-word&style=social)](https://github.com/iamsivab/Movie-Recommendation-Netflix/)
 
-- [Download](https://github.com/iamsivab/Movie-Recommendation-Netflix/blob/master/Sivasubramanian-Text%20Mining%20Report.pdf) for the report.
+- [Download](https://github.com/iamsivab/Movie-Recommendation-Netflix/) for the report.
 
 ### Useful Links
 
-1. [Why Term Frequency is better than TF-IDF for text classification](https://www.quora.com/Why-does-TF-term-frequency-sometimes-give-better-F-scores-than-TF-IDF-does-for-text-classification)
- 
-### Related Work
 - https://www.netflixprize.com/rules.html
 - https://www.kaggle.com/netflix-inc/netflix-prize-data
 - Netflix blog: https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429 (very nice blog)
@@ -110,9 +116,9 @@ Dates have the format YYYY-MM-DD.
 - Research paper: http://courses.ischool.berkeley.edu/i290-dm/s11/SECURE/a1-koren.pdf (most of our work was inspired by this paper)
 - SVD Decomposition : https://www.youtube.com/watch?v=P5mlg91as1c
 
-[![Sentiment Analysis](https://img.shields.io/static/v1.svg?label=Text&message=Mining&color=lightgray&logo=linkedin&style=social&colorA=critical)](https://www.linkedin.com/in/iamsivab/) [![GitHub top language](https://img.shields.io/github/languages/top/iamsivab/Movie-Recommendation-Netflix.svg?logo=php&style=social)](https://github.com/iamsivab/)
+[![IPYNB](https://img.shields.io/static/v1.svg?label=IPYNB&message=Movie&color=lightgray&logo=linkedin&style=social&colorA=critical)](https://www.linkedin.com/in/iamsivab/) [![GitHub top language](https://img.shields.io/github/languages/top/iamsivab/Movie-Recommendation-Netflix.svg?logo=php&style=social)](https://github.com/iamsivab/)
 
-[Text Mining Analyzer](https://github.com/iamsivab/Movie-Recommendation-Netflix) - A Detailed Report on the Analysis
+[Report](https://github.com/iamsivab/Movie-Recommendation-Netflix) - A Detailed Report on the Analysis
 
 
 ### Contributing
