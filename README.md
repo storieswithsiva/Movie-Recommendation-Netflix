@@ -174,7 +174,7 @@ git clone https://github.com/iamsivab/Movie-Recommendation-Netflix.git
 
 - Check out any issue from [here](https://github.com/iamsivab/Movie-Recommendation-Netflix/issues).
 
-- Make changes and send [Pull Request](https://github.com/iamsivab/Movie-Recommendation-Netflix/pull).
+- Make changes and send [Pull Request](https://github.com/iamsivab/Movie-Recommendation-Netflix/pulls).
  
 ### Need help?
 
