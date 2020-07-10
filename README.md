@@ -104,20 +104,35 @@ print(datetime.now() - start)
 ![Ipynb](https://img.shields.io/badge/Python-sklearn-blue.svg?style=flat&logo=python&logoColor=white) 
 
 
-### Installation
+## Python libraries List
 
-- Install **datetime** using pip command: `from datetime import datetime`
-- Install **pandas** using pip command: `import pandas as pd`
-- Install **numpy** using pip command: `import numpy as np`
-- Install **matplotlib** using pip command: `import matplotlib`
-- Install **matplotlib.pyplot** using pip command: `import matplotlib.pyplot as plt`
-- Install **seaborn** using pip command: `import seaborn as sns`
-- Install **os** using pip command: `import os`
-- Install **scipy** using pip command: `from scipy import sparse`
-- Install **scipy.sparse** using pip command: `from scipy.sparse import csr_matrix`
-- Install **sklearn.decomposition** using pip command: `from sklearn.decomposition import TruncatedSVD`
-- Install **sklearn.metrics.pairwise** using pip command: `from sklearn.metrics.pairwise import cosine_similarity`
-- Install **random** using pip command: `import random`
+- In **datetime** Library Import: `from datetime import datetime`
+- In **pandas** Library Import: `import pandas as pd`
+- In **numpy** Library Import: `import numpy as np`
+- In **matplotlib** Library Import: `import matplotlib`
+- In **matplotlib.pyplot** Library Import: `import matplotlib.pyplot as plt`
+- In **seaborn** Library Import: `import seaborn as sns`
+- In **os** Library Import: `import os`
+- In **scipy** Library Import: `from scipy import sparse`
+- In **scipy.sparse** Library Import: `from scipy.sparse import csr_matrix`
+- In **sklearn.decomposition** Library Import: `from sklearn.decomposition import TruncatedSVD`
+- In **sklearn.metrics.pairwise** Library Import: `from sklearn.metrics.pairwise import cosine_similarity`
+- In **random** Library Import: `import random`
+
+### Installation 
+
+- Install **datetime** using pip command: `pip install datetime`
+- Install **pandas** using pip command: `pip install pandas`
+- Install **numpy** using pip command: `pip install numpy`
+- Install **matplotlib** using pip command: `pip install matplotlib`
+- Install **matplotlib.pyplot** using pip command: `pip install matplotlib`
+- Install **seaborn** using pip command: `pip install seaborn`
+- Install **os** using pip command: `pip install os`
+- Install **scipy** using pip command: `pip install scipy`
+- Install **scipy.sparse** using pip command: `pip install scipy`
+- Install **sklearn.decomposition** using pip command: `pip install scikit-learn`
+- Install **sklearn.metrics.pairwise** using pip command: `pip install scikit-learn`
+- Install **random** using pip command: `pip install random`
 
 
 ### How to run?
