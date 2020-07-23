@@ -2,7 +2,7 @@
 
 [![Makes people smile](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/iamsivab)
 
-[![HitCount](http://hits.dwyl.com/iamsivab/Movie-Recommendation-Netflix.svg)](http://hits.dwyl.com/iamsivab/Movie-Recommendation-Netflix)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fiamsivab%2FMovie-Recommendation-Netflix)](https://hits.seeyoufarm.com)
 
 # Movie-Recommendation-Netflix
 
